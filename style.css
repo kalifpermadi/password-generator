@@ -1,0 +1,89 @@
+:root {
+    --primary: white;
+    --secondary: #1a1a1a;
+    --tertiary: #222222;
+    --fourth: black;
+}
+body {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+h2 {
+    margin: 0;
+}
+.box {
+    background-color: var(--primary);
+    color: var(--fourth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.input {
+    height: 36px;
+    display: flex;
+    width: 250px;
+    margin-top: 12px;
+}
+.input input {
+    height: 36px;
+    border: 0;
+    width: 100%;
+    padding: 0;
+    padding-left: 8px;
+    background-color: transparent;
+    color: var(--fourth);
+}
+.input input:focus {
+    outline: 0;
+}
+.input button {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+.input img {
+    width: 24px;
+    filter: invert(0);
+}
+.text {
+    visibility: hidden;
+    position: absolute;
+    color: var(--fourth);
+    width: 36px;
+    padding: 4px;
+    border-radius: 4px;
+}
+#copyButton img {
+    visibility: visible;
+}
+#copyButton:hover .text {
+    visibility: visible;
+}
+#copyButton:hover img {
+    visibility: hidden;
+}
+#generateButton {
+    width: 250px;
+    height: 36px;
+    margin-top: 12px;
+    color: var(--fourth);
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 24px;
+    cursor: pointer;
+}

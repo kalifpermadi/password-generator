@@ -12,8 +12,8 @@
         <h2>Password Generator</h2>
             <div class="input">
                 <input type="text" placeholder="Generated password goes here" id="password" readonly>
-                <button id="copyButton" onclick="copyPassword()">
-                    <span class="text">Copy</span>
+                <button id="copyButton" onclick="copyPassword()" onmouseout="outFunction()">
+                    <span class="text" id="text">Copy</span>
                     <img src="assets/copy.svg">
                 </button>
             </div>
